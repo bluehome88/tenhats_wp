@@ -135,7 +135,7 @@ if ( ! class_exists( 'Redux_Color', false ) ) {
 				$style = $mode . ':' . $this->value . ';';
 
 				if ( ! empty( $this->field['output'] ) && is_array( $this->field['output'] ) ) {
-					$css                      = Redux_Functions::parse_css( $this->field['output'], $style, $this->value );
+					$css                      = Redux_Functions::parse_css( $this->field['output'], $style, $this->value['color'] );
 					$this->parent->outputCSS .= $css;
 				}
 
