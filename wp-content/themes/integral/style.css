@@ -505,7 +505,7 @@ input:-moz-focus-inner {
     border-color: #00aded;
 }
 .navbar-default .navbar-nav {
-    padding-top: 23px;
+    padding-top: 35px;
 }
 .navbar-default .navbar-nav li.menu-item-has-children a {
     margin-bottom: 23px;
@@ -1832,3 +1832,20 @@ body .elementor-section {padding: 0;}
 /* Custom CSS
 /* - Override the themes default styling here. You can also use the section entitled [Custom CSS] in the theme options panel.
 ================================================== */
+
+#services .multi-columns-row{
+	display: none;
+}
+.copyright .nav>li>a:focus, .copyright .nav>li>a:hover{
+	background-color: transparent;
+}
+#welcome{
+    display: none;
+}
+.home_banner{
+    margin-top: 94px;
+}
+.maxslider-slide-content .maxslider-slide-title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

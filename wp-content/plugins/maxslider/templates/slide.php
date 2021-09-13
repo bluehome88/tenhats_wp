@@ -28,6 +28,7 @@ $slide_class = "maxslider-{$slider['id']}-slide-{$slide['id']}";
 	<div class="maxslider-slide <?php echo esc_attr( $slide_class ); ?>">
 		<div class="maxslider-slide-content <?php echo esc_attr( $align_classes ); ?>">
 			<div class="maxslider-slide-content-pad">
+				<h2>SMSF audits</h2>
 				<?php if ( ! empty( $slide['title'] ) ) : ?>
 					<h3 class="maxslider-slide-title">
 						<?php echo wp_kses( $slide['title'], MaxSlider()->sanitizer->allowed_tags( 'title' ) ); ?>
