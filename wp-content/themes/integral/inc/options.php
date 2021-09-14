@@ -1963,6 +1963,12 @@ Redux::setSection($opt_name, array(
             'default' => 'Contact Info',
         ) ,
         array(
+            'id' => 'contactinfo-brief',
+            'type' => 'text',
+            'title' => __('description', 'integral') ,
+            'default' => 'Description',
+        ) ,
+        array(
             'id' => 'contact-phone',
             'type' => 'text',
             'title' => __('Phone Number', 'integral') ,
