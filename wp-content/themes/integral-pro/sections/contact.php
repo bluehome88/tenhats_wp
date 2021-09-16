@@ -31,7 +31,7 @@
         <?php } ?>
 		<div class="col-md-6">
 				<?php if ($integral['contactinfo-title']) { ?><h3><?php echo esc_html($integral['contactinfo-title']); ?></h3><?php } ?>
-				<?php if ($integral['contactinfo-brief']) { ?><p><?php echo esc_html($integral['contactinfo-brief']); ?></p><?php } ?>
+				<?php if ($integral['contactinfo-brief']) { ?><div class="info"><?php echo esc_html($integral['contactinfo-brief']); ?></div><?php } ?>
 				<?php if ($integral['contact-phone']) { ?><div class="info">
 				<span class="fa fa-phone fa-md"></span> <?php echo wp_kses_post($integral['contact-phone']); ?>
 				</div><?php } ?>

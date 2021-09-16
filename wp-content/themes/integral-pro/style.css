@@ -529,9 +529,6 @@ input:-moz-focus-inner {
 .navbar-default .navbar-nav > li.active a {
     border-color: #00aded;
 }
-.navbar-default .navbar-nav {
-    padding-top: 23px;
-}
 .navbar-default .navbar-nav li.menu-item-has-children a {
     margin-bottom: 23px;
 }
@@ -2039,3 +2036,89 @@ object {
 /* Custom CSS
 /* - Override the themes default styling here. You can also use the section entitled [Custom CSS] in the theme options panel.
 ================================================== */
+p, div{
+    font-family: "Roboto";
+    line-height: 32px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Condensed";
+}
+#services .multi-columns-row{
+    display: none;
+}
+.copyright .nav>li>a:focus, .copyright .nav>li>a:hover{
+    background-color: transparent;
+}
+#welcome{
+    display: none;
+}
+.home_banner{
+    margin-top: 67px;
+}
+.maxslider{
+    margin-bottom: 0;
+}
+.maxslider-slide-content .maxslider-slide-title{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.maxslider-slide .maxslider-slide-content .maxslider-slide-content-pad{
+    padding:  30px 40px;
+}
+.heading .subtitle{
+    display: none;
+}
+a.navbar-brand{
+    padding: 10px 15px;
+}
+a.navbar-brand>img{
+    max-height: 50px;
+}
+.navbar-default .navbar-nav {
+    padding-top: 25px;
+}
+.services{
+    background-color: #bfbfbf;
+    color: #666;
+}
+h2.bigtitle_dark span{
+    padding: 10px 40px;
+}
+
+.testimonials .blacklayer{
+    background: rgba(0, 0, 0, 0.7) url('images/bg-strip.png') repeat scroll 0 0
+}
+.testimonials .smalltitle_dark, .calltoaction h2{
+    font-size: 50px;
+    line-height: 50px;
+}
+.contact input, .contact textarea{
+    padding: 15px 20px !important;
+}
+.contact span{
+    padding-right: 0;
+    margin-right: 7px;
+}
+.contact a{
+    color: #888;
+}
+.contact a:hover{
+    text-decoration: none;
+    color: #ccc;
+}
+.contact input[type="submit"]{
+    background: #00aded;
+    border-color: #00aded;
+    color: white;
+    font-size: 18px;
+    max-width: calc(100% + 6px);
+    font-weight: bold;
+}
+.copyright a{
+    padding: 5px 20px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.copyright a:hover{
+    color: #ccc;
+}

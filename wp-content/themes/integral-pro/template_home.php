@@ -10,6 +10,9 @@ Template Name: One-page Template (Home)
  */
 ?>
 <?php get_header(); ?>
+<div class="home_banner">
+<?php the_content(); ?>
+</div>
 <?php 
 $layout = $integral['gen-home-layout']['Enabled'];
 
