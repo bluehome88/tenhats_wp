@@ -2049,9 +2049,6 @@ h1, h2, h3, h4, h5, h6{
 .copyright .nav>li>a:focus, .copyright .nav>li>a:hover{
     background-color: transparent;
 }
-#welcome{
-    display: none;
-}
 .home_banner{
     margin-top: 67px;
 }
@@ -2063,7 +2060,8 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 30px;
 }
 .maxslider-slide .maxslider-slide-content .maxslider-slide-content-pad{
-    padding:  30px 40px;
+    padding:  30px 50px;
+    border-radius: 20px;
 }
 .heading .subtitle{
     display: none;
@@ -2071,14 +2069,8 @@ h1, h2, h3, h4, h5, h6{
 a.navbar-brand{
     padding: 10px 15px;
 }
-a.navbar-brand>img{
-    max-height: 50px;
-}
-.navbar-default .navbar-nav {
-    padding-top: 25px;
-}
 .services{
-    background-color: #bfbfbf;
+    background-color: #afafaf;
     color: #666;
 }
 h2.bigtitle_dark span{
@@ -2091,6 +2083,9 @@ h2.bigtitle_dark span{
 .testimonials .smalltitle_dark, .calltoaction h2{
     font-size: 50px;
     line-height: 50px;
+}
+.testimonials p{
+    line-height: 42px;
 }
 .contact input, .contact textarea{
     padding: 15px 20px !important;
@@ -2121,4 +2116,48 @@ h2.bigtitle_dark span{
 }
 .copyright a:hover{
     color: #ccc;
+}
+.calltoaction h2{
+    margin-bottom: 30px;
+}
+.home_brief p{
+    margin-bottom: 10px;
+}
+#welcome .blacklayer{
+    background: rgba(0, 0, 0, 0.001) url(images/bg-strip.png) repeat scroll 0 0;
+}  
+#welcome .lead{
+    color: #666;
+    text-shadow: none;
+}
+#welcome h2{
+    text-shadow: none;    
+}
+.testimonials h2,
+.testimonials small,
+.testimonials blockquote:before, 
+.testimonials blockquote:after{
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+}
+.testimonials h2{
+    margin-bottom: 30px;
+}
+.testimonials h2 span{
+    background: #000;
+}
+.testimonials blockquote{
+    font-size: 20px;
+    color: #333;
+    text-shadow: none;
+}
+.testimonials .blacklayer{
+    background: rgb(255 255 255 / 80%) url(images/bg-strip.png) repeat scroll 0 0;
+}
+.flex-control-paging li a{
+    background: rgba(0, 0, 0, 0.3);
+}
+.flex-control-paging li a.flex-active{
+    background: rgba(0, 0, 0, 0.8);
 }
