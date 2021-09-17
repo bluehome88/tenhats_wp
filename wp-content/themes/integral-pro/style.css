@@ -2124,7 +2124,7 @@ h2.bigtitle_dark span{
     margin-bottom: 10px;
 }
 #welcome .blacklayer{
-    background: rgba(0, 0, 0, 0.001) url(images/bg-strip.png) repeat scroll 0 0;
+    background: white;
 }  
 #welcome .lead{
     color: #666;
