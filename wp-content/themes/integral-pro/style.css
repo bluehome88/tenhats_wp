@@ -2161,3 +2161,10 @@ h2.bigtitle_dark span{
 .flex-control-paging li a.flex-active{
     background: rgba(0, 0, 0, 0.8);
 }
+.maxslider .maxslider-align-middle{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.maxslider .slick-slide{
+    background-position: center center;
+}
