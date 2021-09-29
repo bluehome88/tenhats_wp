@@ -1849,3 +1849,6 @@ body .elementor-section {padding: 0;}
     margin-top: 20px;
     margin-bottom: 30px;
 }
+.heading .subtitle{
+    display: none;
+}

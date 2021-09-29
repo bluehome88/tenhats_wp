@@ -530,10 +530,16 @@ class Control extends Root {
 	 * @return string empty string if empty, otherwise the cache control header.
 	 */
 	public function output() {
+		$esi_hdr = '';
+		if ( ESI::has_esi() ) {
+			$esi_hdr = ',esi=on';
+		}
+
 		$hdr = self::X_HEADER . ': ';
 
-		if ( defined( 'DONOTCACHEPAGE' ) && DONOTCACHEPAGE ) {
-			$hdr .= 'no-cache';
+		if ( defined( 'DONOTCACHEPAGE' ) && apply_filters( 'litespeed_const_DONOTCACHEPAGE', DONOTCACHEPAGE ) ) {
+			Debug2::debug( "[Ctrl] ❌ forced no cache [reason] DONOTCACHEPAGE const" );
+			$hdr .= 'no-cache' . $esi_hdr;
 			return $hdr;
 		}
 
@@ -541,9 +547,11 @@ class Control extends Root {
 		if ( defined( 'LITESPEED_GUEST' ) && LITESPEED_GUEST ) {
 			// If is POST, no cache
 			if ( defined( 'LSCACHE_NO_CACHE' ) && LSCACHE_NO_CACHE ) {
+				Debug2::debug( "[Ctrl] ❌ forced no cache [reason] LSCACHE_NO_CACHE const" );
 				$hdr .= 'no-cache';
 			}
 			else if( $_SERVER[ 'REQUEST_METHOD' ] !== 'GET' ) {
+				Debug2::debug( "[Ctrl] ❌ forced no cache [reason] req not GET" );
 				$hdr .= 'no-cache';
 			}
 			else {
@@ -551,14 +559,12 @@ class Control extends Root {
 				$hdr .= ',max-age=' . $this->get_ttl();
 			}
 
+			$hdr .= $esi_hdr;
+
 			return $hdr;
 		}
 
-		$esi_hdr = '';
 		// Fix cli `uninstall --deactivate` fatal err
-		if ( ESI::has_esi() ) {
-			$esi_hdr = ',esi=on';
-		}
 
 		if ( ! self::is_cacheable() ) {
 			$hdr .= 'no-cache' . $esi_hdr;
